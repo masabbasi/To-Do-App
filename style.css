@@ -33,13 +33,13 @@ form {
 }
 
 .input-todo {
-    width: 70%;
+    width: 400px;
     height: 40px;
     padding: 4px;
     border: none;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    outline-color: #0096c7;
+    outline: none;
 }
 
 
@@ -125,3 +125,34 @@ form {
     text-decoration: line-through;
     opacity: 0.5;
   }
+
+  .fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+@media (max-width:500px) {
+
+    .container {
+        width:100%;
+    }
+
+    .input-todo {
+        width:60%px;
+    }
+
+    .filter-todo {
+        width:30%;
+    }
+
+    form {
+        width: 90%;
+        min-height: 10vh;
+        margin: 0;
+    }
+
+    .add-todo-button {
+        width: 50px;
+        padding-right: 5px;
+    }
+}

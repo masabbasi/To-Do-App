@@ -18,37 +18,18 @@
     <div class="container">
         <h1>To Do App</h1>
         <form>
-            <input type="text" placeholder="Enter Your Todo..." class="input-todo">
+            <input type="text" placeholder="Enter Your To Do..." class="input-todo">
             <button class="add-todo-button" type="submit">
                 <i class="fas fa-plus-square"></i>
             </button>
             <select name="todos" class="filter-todo">
-                <option value="All">All</option>
-                <option value="Completed">Completed</option>
-                <option value="Uncompleted">UnCompleted</option>
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">UnCompleted</option>
             </select>
         </form>
         <div class="todo-container">
-            <ul class="todo-list">
-                <div class="todo-item">
-                    <li>hi</li>
-                    <button class="complete-btn">
-                        <i class="fas fa-check"></i>
-                    </button>
-                    <button class="trash-btn">
-                        <i class="fas fa-trash"></i>
-                    </button>
-                </div>
-                <div class="todo-item completed">
-                    <li>bye</li>
-                    <button class="complete-btn">
-                        <i class="fas fa-check"></i>
-                    </button>
-                    <button class="trash-btn">
-                        <i class="fas fa-trash"></i>
-                    </button>
-                </div>
-            </ul>
+            <ul class="todo-list"></ul>
         </div>
     </div>
     <script src="script.js"></script>
