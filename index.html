@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>To Do App</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>To Do App</h1>
+        <form>
+            <input type="text" placeholder="Enter Your Todo..." class="input-todo">
+            <button class="add-todo-button" type="submit">
+                <i class="fas fa-plus-square"></i>
+            </button>
+            <select name="todos" class="filter-todo">
+                <option value="All">All</option>
+                <option value="Completed">Completed</option>
+                <option value="Uncompleted">UnCompleted</option>
+            </select>
+        </form>
+        <div class="todo-container">
+            <ul class="todo-list">
+                <div class="todo-item">
+                    <li>hi</li>
+                    <button class="complete-btn">
+                        <i class="fas fa-check"></i>
+                    </button>
+                    <button class="trash-btn">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+                <div class="todo-item completed">
+                    <li>bye</li>
+                    <button class="complete-btn">
+                        <i class="fas fa-check"></i>
+                    </button>
+                    <button class="trash-btn">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
